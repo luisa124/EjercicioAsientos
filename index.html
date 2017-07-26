@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>recervar asiento</title>
+	<link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      
+      <div class="container">
+      <h1>Recervar asiento</h1>
+   
+          <table border="4">
+              <tr id = "1" class="celda">
+                  <td class="celda"><button>4</button></td><td class="celda"><button>8</button></td><td class="celda"><button>12</button></td><td class="celda"><button>16</button></td><td class="celda"><button>20</button></td><td class="celda"><button>24</button></td><td class="celda"><button>28</button></td><td class="celda"><button>32</button></td>
+              </tr>
+              <tr>
+                  <td class="celda"><button>3</button></td><td class="celda"><button>7</button></td><td class="celda"><button>11</button></td><td class="celda"><button>15</button></td><td class="celda"><button>19</button></td><td class="celda"><button>23</button></td><td class="celda"><button>27</button></td><td class="celda"><button>31</button></td>
+              </tr>
+              <tr>
+                  <td class="celda"><button>2</button></td><td class="celda"><button>6</button></td><td class="celda"><button>10</button></td><td class="celda"><button>14</button></td><td class="celda"><button>18</button></td><td class="celda"><button>22</button></td><td class="celda"><button>26</button></td><td class="celda"><button>30</button></td>
+              </tr>
+              <tr>
+                  <td class="celda"><button>1</button></td><td class="celda"><button>5</button></td><td class="celda"><button>9</button></td><td class="celda"><button>13</button></td><td class="celda"><button>17</button></td><td class="celda"><button>21</button></td><td class="celda"><button>25</button></td><td class="celda"><button>29</button></td>
+              </tr>
+          </table>
+            
+    </div>
+	  
+	  <div id="mostrar"></div>
+   <h2>Buscar por dni los asientos recervados</h2> 
+ <label for="inputDni" class="sr-only"> DNI:</label>
+  <input type="number" id="nro_dni" placeholder="buscar por dni">
+	 <button id="buscarnuevoasiento" type="button" name="button">buscar</button> 
+
+      <div>
+        <h3>Coloca tu nombre y apellido para recervar el asiento</h3>
+		  
+          <table border="">
+           <tr>
+             <td><input id="inputNombre" placeholder="nombre" value=""></td>
+             <td><button id="reservar" onclick="reservar()">Reservar</button></td>
+            </tr>
+              <tr>
+               <td><input id="inputApellido"  placeholder=" apellido" value=""></td>
+				  <td><button id="canselar" onclick="canselar()">canselar</button></td>
+              </tr>
+              
+              <tr>      
+            <td>
+            <input type="number" id="nro_dni" class="form-control" placeholder=" dni" value="">
+           </td>
+          </tr>
+  
+         </table>
+		  
+		<button id="lista" class="save_list">lista</button>  
+      </div>
+	  
+	  <div id="buscar"></div>
+	  <div id="asientos"></div>
+	  
+	  <div id="redirect"></div>
+	  <div id="limpiar"></div>
+      <script src="javascript.js"></script>
+  </body>
+</html>
